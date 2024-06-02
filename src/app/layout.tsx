@@ -19,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="nav-bar">
+          <Link href="/">Logo</Link>
           <Link href="/">Home</Link>
           <Link href="/list">List</Link>
           <Link href="/cart">Cart</Link>
