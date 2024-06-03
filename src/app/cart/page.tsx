@@ -7,8 +7,8 @@
 // 'use client' -> client component
 
 import { age, name } from './data.js';
-import Hello from './Hello.tsx';
-
+import Hello from './Hello';
+ 
 export default function Cart() {
   return (
     <div className="">
