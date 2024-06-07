@@ -9,22 +9,27 @@
 import { age, name } from './data.js';
 import Hello from './Hello';
  
+interface CartItemProps {
+  cart : string;
+}
+
 export default function Cart() {
-  return (
-    <div className="">
+let cart = ['Tomatoes', 'Pasta', 'Pizza']
+return (
+  <div className="">
       <Hello />
       <h4 className="title">Cart Page</h4>
-      <CartItem />
-      <CartItem />
-      <CartItem />
+      <CartItem cart = { cart[0] }/>
+      <CartItem cart = { cart[1] }/>
+      <CartItem cart = { cart[2] }/>
     </div>
   );
 }
 
-function CartItem(){
+function CartItem({ cart }: CartItemProps){
   return (
     <div className="cart-item">
-        <p>상품명 {age}</p>
+        <p>{ cart }</p>
         <p>$40</p>
         <p>1개</p>
     </div>
